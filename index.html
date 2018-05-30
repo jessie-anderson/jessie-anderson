@@ -13,16 +13,7 @@
       Tune Me uses pitch detection and Android's sound card to tell users how
       accurate their singing is. Users press a start button, begin singing,
       and then press a stop button when they are done recording. The app will
-      display their overall note accuracy for that recording, as well as a color bar
-      representing how accurate they were at each point in the song. Users will
-      be able to choose the color spectrum that they want to be displayed on the color
-      bar (the default will be a spectrum ranging from red for bad, to yellow
-      for mediocre, to green for accurate). The color bar will have a slider
-      that users can drag to any point in the recording that they want to listen
-      to. Users will be able to save or delete the recording; if they choose to
-      save the recording, they will be able to name the file. Saved recordings
-      will be available in the app for users to pull up and listen to at any
-      time.
+      display their overall note accuracy for that recording, as well as a color bar representing how accurate they were at each point in the song. The colors will be a spectrum ranging from red for bad, to yellow for mediocre, to green for accurate. The color bar will have a slider that users can drag to any point in the recording that they want to listen to. Users will be able to save or delete the recording; if they choose to save the recording, they will be able to name the file. Saved recordings will be available in the app for users to pull up and listen to at any time.
     </div>
     <br/>
     <div>
@@ -38,47 +29,43 @@
       recordings, including the file name, the overall pitch accuracy, and the
       accuracy at each point in the song.
     </div>
-    <h2>Checkpoint 1</h2>
     <h3>MVC</h3>
-    <img src="./img/android_mvc.png" style="width: 750px;"/>
+    <img src="./img/demo_mvc.png" style="width: 750px;"/>
     <br></br>
-    <img src="./img/android_thread.png" style="width: 750px;"/>
-    <h3>Milestones</h3>
-    <b>Basic UI: </b><span>done</span>
-    <br />
-    <b>User Authentication: </b><span>Friday 5/25</span>
-    <br />
-    <b>Recording and Saving Audio: </b><span>Friday 5/25</span>
-    <br />
-    <b>Sorting Audio Files into Collections: </b><span>Friday 5/25</span>
-    <br />
-    <b>Displaying Recordings and Collections on UI: </b><span>Friday 5/25</span>
-    <br />
-    <b>Analysis of vocal recordings & overall accuracy: </b><span>Tuesday 5/29</span>
-    <br />
-    <b>Displaying vocal accuracy on a colorbar: </b><span>Tuesday 5/29</span>
-
-
+    <img src="./img/demo_thread.png" style="width: 750px;"/>
 
     <h3>Current Features</h3>
     <ol>
-      <li>Vocal recording - Ci-Yu</li>
-      <li>Saving recordings- Ci-Yu </li>
-      <li>Firebase authentication - Ci-Yu</li>
-      <li>Uploading recordings to Firebase (code) - Ci-Yu</li>
+      <li>Saving and recording audio from the user - Ci-Yu</li>
       <li>Displaying recording history - Jessie</li>
       <li>Collections of recordings: adding, naming, & renaming collections;
         adding & removing recordings from collections - Jessie</li>
       <li> Setup of local SQLite database - Jessie </li>
-      <li><strike>(Potentially) support audio file upload for users' favorite songs</strike> (removed)</li>
+      <li>Using TarsosDSP to derive pitches from a recording - Ci-Yu</li>
+      <li>Process extracted pitches and determining the accuracy - Jessie</li>
+      <li>Creating a visualization of the audio recordings - Ci-Yu</li>
     </ol>
 
-    <h3>WIP</h3>
-    <ol>
-    	<li>Playing a tone to the user to begin recording - Ci-Yu</li>
-    	<li>Using Essentia to process audio recordings - Jessie</li>
-    	<li>Displaying a Visualization of the audio recordings - Ci-Yu</li>
-    </ol>
+    <h3> Libraries Used </h3>
+    <ul>
+      <li><a href="https://github.com/JorenSix/TarsosDSP">TarsosDSP</a></li>
+      <li><a href="https://github.com/GautamChibde/android-audio-visualizer">Audio Visualizer</a></li>
+    </ul>
+    	
+    <h3>Download</h3>
+    <ul>
+      <li>Download APK <a href="https://drive.google.com/file/d/1vbN1wrbmmXYGnc69NDBnktLajGiYg71f/view?usp=sharing">HERE</a>.</div></li>
+    </ul>
+
+    <h3>Presentation</h3>
+    <ul>
+      <li><a href="https://docs.google.com/presentation/d/1S78IZbPzGiHMiS3xP3Sldk03F58KlKTclUeiiESYhPY/edit?usp=sharing">Demo Day Presentation</a></div></li>
+    </ul>
+
+    <h3>Git Repo</h3>
+    <ul>
+      <li><a href="https://gitlab.cs.dartmouth.edu/ciyuyan/project">Git Repo</a></div></li>
+    </ul>
 
   </body>
 </html>
